@@ -11,7 +11,7 @@
     "bulid": "npm run clean && npm run build_client",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.client.js",
     "lint": "eslint --ext .js --ext .jsx --ext .vue client/",
-    "lint-fix": "eslint --ext .js --ext .jsx --ext .vue client/"
+    "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue client/"
   },
   "author": "",
   "license": "ISC",
