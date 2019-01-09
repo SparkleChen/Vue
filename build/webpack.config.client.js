@@ -19,7 +19,13 @@ const defaultPlugins = [
           NODE_ENV: isDev ? '"development"' : '"production"'
         }
       }),
-      new HTMLPlugin()
+      new HTMLPlugin({
+        title: 'Css',
+        template: './client/index.html',
+        meta: {
+          'viewport': 'width=device-width, initial-scale=0.5, shrink-to-fit=no',
+        }
+      })
 ]
 let config
 

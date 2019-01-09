@@ -68,14 +68,13 @@ export default {
   .header
     width: 100%
     height: 102px
+    display: flex
     background: #06c1ae
-    position: relative
     border-bottom: 1px solid #21897d
     box-sizing: border-box
     font-size: 0px
     .nav-left-warpper
       height: 101px
-      display: inline-block
       a 
         text-decoration: none;
         outline: 0;
@@ -90,11 +89,10 @@ export default {
           color: #fff
           font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
     .box-search
-      width: 517px
       height: 64px
       line-height: 64px
-      display: inline-block
-      margin: 20px 40px 0px 40px
+      flex: 1
+      margin: 20px 40px 0px 30px
       border-radius: 6px
       background: rgba(0,0,0,.15)
       font-size: 26px
@@ -102,24 +100,26 @@ export default {
       .single-line
         padding-left: 60px
     .nav-right-wrapper
+      width: 104px
       height: 101px
       line-height: 101px
-      display: inline-block
       vertical-align: top 
       a 
         text-decoration: none
         outline: 0; 
         .nav-my
-          font-size: 20px 
+          font-size: 30px
           color: #fff   
   .banner
     .banner-img
       width: 100%
   .list
+    box-sizing: border-box
     border-top: 1px solid black   
     width: 100%
     height: 361px 
     .list-item
+      width: 20%
       display: inline-block
       padding: 20px 0px
       .item-link
@@ -127,10 +127,11 @@ export default {
         text-decoration: none
         outline: 0; 
         .icon
-          width: 90px
-          height: 90px
-          display: inline-block
-          margin: 0px 53px 14px 53px
+          width: 80px
+          height: 80px
+          display: block
+          margin: 0 auto
+          margin-bottom: 7px
           background-color: black
         .txt
           display: block
@@ -140,31 +141,31 @@ export default {
       .list-dot-item
         width: 16px
         height: 16px
+        font-size: 28px
         display: inline-block
         margin: 0px 15px
         border-radius: 50%
         background-color: #06c1ae 
   .guess-like
     width: 100%
-    margin-top: 20px
+    margin-top: 10px
     border-bottom: 1px solid black 
     .guess-wrapper
-      padding-left: 30px
+      padding-left: 10px
       .guess-title
         font-size: 34px
-        padding: 28px 0px
+        padding: 14px 0px
       .guess-product-list
         .guess-item
-          padding: 28px 20px 28px 0px
+          padding: 14px 10px 14px 0px
           border-top: 1px solid black
           .guess-img
             position: absolute
           .guess-detial-wrapper
-            width: 720px
             height: 200px
             margin-left: 210px
             position: relative
-            display:inline-block
+            display: block
             .title
               padding: 12px 0px
               font-size: 30px
