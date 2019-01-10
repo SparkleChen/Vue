@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import App from './app.vue'
 
-import './assets/styles/global.styl'
+Vue.config.productionTip = false
 
-const root = document.createElement('div')
-document.body.appendChild(root)
-
+/* eslint-disable no-new */
 new Vue({
-  render: (h) => h(App)
-}).$mount(root)
+  el: '#app',
+  template: '<App/>',
+  components: { App }
+})
