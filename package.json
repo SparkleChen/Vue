@@ -5,13 +5,10 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "precommit": "npm run lint-fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build_client": "cross-env NODE_ENV=production webpack --config build/webpack.config.client.js",
     "build": "npm run clean && npm run build_client",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.client.js",
-    "lint": "eslint --ext .js --ext .jsx --ext .vue client/",
-    "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue client/"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.client.js"
   },
   "author": "",
   "license": "ISC",

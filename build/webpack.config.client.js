@@ -19,7 +19,9 @@ const defaultPlugins = [
           NODE_ENV: isDev ? '"development"' : '"production"'
         }
       }),
-      new HTMLPlugin()
+      new HTMLPlugin({
+        template:'./client/index.html'
+      })
 ]
 let config
 
