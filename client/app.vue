@@ -12,6 +12,7 @@
 </template>
 
 <script>
+const R = require('ramda');
 export default {
   name: 'app',
   data () {
@@ -36,7 +37,38 @@ export default {
       dropBalls:[]
     }
   },
+  created(){
+    let results = R.composeP(this.getList,this.getImage,this.getUser);
+    results('user')
+    .then(image=>{
+      console.log(image)
+    })
+  },
   methods: {
+   getUser(user){
+     return new Promise((resolve,reject)=>{
+       setTimeout(()=>{
+         resolve(user)
+       },500)
+     })
+   },
+   getImage(image){
+    return new Promise((resolve,reject)=>{
+       setTimeout(()=>{
+         resolve(image)
+       },500)
+     })
+   },
+   getList(list){
+    return new Promise((resolve,reject)=>{
+       setTimeout(()=>{
+         resolve(list)
+       },500)
+     })
+   },
+
+
+
     hanldeClick (e) {
       for(let i=0;i<this.balls.length;i++){
         let ball = this.balls[i];

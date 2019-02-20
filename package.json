@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ramda": "^0.26.1",
     "vue": "2.5.13"
   },
   "devDependencies": {
